@@ -14,6 +14,10 @@ export class MusicComponent implements OnInit{
   constructor(private musicService: MusicService){}
 
   ngOnInit(): void {
-    this.musics=this.musicService.getMusics();
+    this.musicService.getMusics().subscribe(
+      {
+        next : musics => this.musics = musics
+      }
+    )
   }
 }
