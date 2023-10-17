@@ -8,12 +8,17 @@ import { Observable } from 'rxjs';
 })
 export class MusicService {
   musics : Music[] = [];
+  baseUrl: string = "http://localhost:3000/musics";
 
   constructor(private http:HttpClient) {
 
   }
 
   getMusics(): Observable<Music[]>{
-    return this.http.get<Music[]>("http://localhost:3000/musics")
+    return this.http.get<Music[]>(this.baseUrl)
+  }
+
+  save(music:Music) : Observable<Music>{
+    return this.http.post<Music>(this.baseUrl, music)
   }
 }
