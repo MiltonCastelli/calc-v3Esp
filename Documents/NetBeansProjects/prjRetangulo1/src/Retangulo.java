@@ -1,10 +1,11 @@
 
+
 /**
  *
  * @author caste
  */
 public class Retangulo {
-    private double altura;
+     private double altura;
     private double base;
     
                                
@@ -19,7 +20,6 @@ public class Retangulo {
         return(altura * base);
     }
     public double calcPerimetro(){
-        return(2 * (altura + base));
-    }
-    
+    return(2 * (altura + base));
+}
 }
