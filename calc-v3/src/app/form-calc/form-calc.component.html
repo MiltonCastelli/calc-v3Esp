@@ -2,5 +2,11 @@
   <input type="number" [(ngModel)]="num1" name ="num1">
   <input type="number" [(ngModel)]="num2" name="num2">
   <button (click)="onClickSum()"> Somar</button>
-  {{sum}}
+  <button (click)="onClickSub()">Subtrair</button>
+  <button (click)="onClickDiv()">Dividir</button>
+  <button (click)="onClickMult()">Multiplicar</button><br>
+  <p>Soma</p>{{sum}}
+  <p>Subtração</p>{{sub}}
+  <p>Divisão</p>{{div}}
+  <p>Multiplicação</p>{{mult}}
 </form>
