@@ -3,7 +3,7 @@
  * @author caste
  */
 public class Aluno {
-     private int ra;
+    private int ra;
     private double ntPrv1;
     private double ntPrv2;
     private double ntTrab1;
